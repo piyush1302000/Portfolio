@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush.00</title>
+    <link rel = "icon" href = "images/titleLogo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dad42f4995.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-no-background.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-regular fa-circle-xmark icon" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars icon" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Piyush Awasthi<br>M.Tech CS @NIT Rourkela</p>
+                <h1>Live <span>Life</span>,<br><span>Sync</span> Vibes</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------About Section--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>At present, a scholar, pursuing M.Tech in NIT Rourkela 
+                    (Batch 2022-2024) in Computer Science department. 
+                    I have a keen interest in learning and exploring new things and
+                    places. I keep breaking the boundaries of my comfort zone in 
+                    pursuit of knowledge and satisfaction.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>
+                               App Development using React Native.
+                            </li>
+                            <li><span>Web Development</span><br>
+                                Web development in HTML, CSS and Javascript.
+                            </li>
+                            <li><span>Game Development</span><br>
+                                Game Development using Unity.
+                            </li>
+                            <li><span>Bash Scripting</span><br>
+                                Developed scripts using PowerShell/Azure CLI and automated them
+                                in cloud environment
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>
+                                M.Tech in Computer Science <b>@NIT, Rourkela</b><br>
+                                CGPA: 7.08/10
+                            </li>
+                            <li><span>2018 - 2022</span><br>
+                                B.Tech in CSE <b>@SSIPMT , Raipur</b><br>
+                                CGPA: 8.26/10
+                            </li>
+                            <li><span>2018 </span><br>
+                                12th ISC Science <b>@MVM School, Raipur</b><br>
+                                CGPA: 6.8/10
+                            </li>
+                            <li><span>2016 </span><br>
+                                10th ICSE Board <b>@Nirmal Vidyalaya School, Jagdalpur</b><br>
+                                CGPA: 7.2/10
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services Section------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <h2>Web Projects</h2>
+                    <p>Development and designing of web-based applications using 
+                        HTML, CSS, Javascript. Check out my work on multiple projects from 
+                        my GitHub account. Feel free to let me know in case of
+                        suggestions and concerns.
+                    </p>
+                        <a href="https://github.com/piyush1302000">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book-atlas"></i>
+                    <h2>Research Work</h2>
+                    <p>Published articles on research work based around ML
+                        classifiers, prediction algorithms in B.Tech. Currently
+                        pursuing research in the field of AI and ML
+                        for my M.Tech course. 
+                    </p>
+                        <a href="https://drive.google.com/file/d/1SzMxx7i1F8yKe7b4zfq9ev24KIm4V0VJ/view?usp=drivesdk">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-laptop"></i>
+                    <h2>Coding</h2>
+                    <p>I have completed almost 300 questions on leetcode using 
+                        different data structures and algorithms. 
+                    </p>
+                        <a href="https://leetcode.com/u/Piyush1302/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------Portfolio Section ------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h2>Game Development</h2>
+                        <p>I have a keen interest in Game Development and also worked
+                            on Unity to built few games.
+                        </p>
+                        <a href="https://www.linkedin.com/in/piyush-awasthi-6b00a81a5/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpeg" alt="">
+                    <div class="layer">
+                        <h2>Web App Development</h2>
+                        <p>I have a keen interest in the field of web development and have
+                            built multiple projects based on the knowledge and skills gained.
+                        </p>
+                        <a href="https://github.com/piyush1302000"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h2>Research Publication</h2>
+                        <p>I have worked on a research project during my B.Tech final year(2021-2022)
+                            based on various ML classifier algorithms and have published my work based
+                            on the research.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1SzMxx7i1F8yKe7b4zfq9ev24KIm4V0VJ/view?usp=drivesdk"><i class="fa-solid fa-book-journal-whills"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------------Contact Section------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-col">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> piyush.awasthi1302@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> +91 8120828287</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/piyush-awasthi-6b00a81a5/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Piyush_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="right-col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type= "email" name="email" placeholder="Enter your email" required>
+                        <textarea name="message"  rows="6" placeholder="Type your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Piyush. Designed and developed by Piyush Awasthi</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
